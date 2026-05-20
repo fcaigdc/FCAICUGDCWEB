@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login & Register - FCAI CUGD Club Game Development Community">
+    <title>Login / Register - FCAI CUGD Club</title>
+    <link rel="stylesheet" href="/css/style.css?v=1.0">
+    <link rel="stylesheet" href="/css/login.css?v=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <button class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+
+    <div class="auth-wrapper">
+        <!-- Left Sidebar - Navigation Buttons -->
+        <div class="auth-sidebar">
+            <div class="sidebar-content">
+                <h1 class="brand-title">FCAI GD Club</h1>
+                <p class="brand-subtitle">Game Development Community</p>
+
+                <div class="nav-buttons">
+                    <button class="nav-btn active" data-target="login-form-container">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span>Login</span>
+                    </button>
+                    <button class="nav-btn" data-target="register-form-container">
+                        <i class="fas fa-user-plus"></i>
+                        <span>Register</span>
+                    </button>
+                    <button class="nav-btn" data-target="forgot-form-container">
+                        <i class="fas fa-key"></i>
+                        <span>Forgot Password</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel - Animated Forms -->
+        <div class="auth-panel">
+            <div class="panel-content">
+                <!-- Login Form -->
+                <div class="form-container active" id="login-form-container">
+                    <div class="form-header">
+                        <h2>Welcome Back</h2>
+                        <p>Sign in to your account</p>
+                    </div>
+                    <form class="auth-form" id="login-form">
+                        <div class="form-group">
+                            <label for="login-email">Email</label>
+                            <input type="email" id="login-email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <div class="password-input">
+                                <input type="password" id="login-password" placeholder="Enter your password" required>
+                                <button type="button" class="password-toggle" data-target="login-password">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="remember-me">
+                                <span class="checkmark"></span>
+                                Remember me
+                            </label>
+                            <a href="#" class="forgot-link" id="forgot-password-link">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn-primary">Sign In</button>
+                    </form>
+                    <div class="form-footer">
+                        <p>Don't have an account? <a href="#" class="switch-link"
+                                data-target="register-form-container">Sign up</a></p>
+                    </div>
+                </div>
+
+                <!-- Register Form -->
+                <div class="form-container" id="register-form-container">
+                    <div class="form-header">
+                        <h2>Join Our Community</h2>
+                        <p>Create your account</p>
+                    </div>
+                    <form class="auth-form" id="register-student-form">
+                        <div class="form-group">
+                            <label for="student-name">Full Name</label>
+                            <input type="text" id="student-name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="student-email">Email</label>
+                            <input type="email" id="student-email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="student-password">Password</label>
+                            <div class="password-input">
+                                <input type="password" id="student-password" placeholder="Create a password" required>
+                                <button type="button" class="password-toggle" data-target="student-password">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="student-confirm-password">Confirm Password</label>
+                            <div class="password-input">
+                                <input type="password" id="student-confirm-password" placeholder="Confirm your password"
+                                    required>
+                                <button type="button" class="password-toggle" data-target="student-confirm-password">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="student-linkedin">LinkedIn Profile (Optional)</label>
+                            <input type="url" id="student-linkedin" placeholder="https://linkedin.com/in/yourprofile">
+                        </div>
+                        <button type="submit" class="btn-primary">Create Account</button>
+                    </form>
+                    <div class="form-footer">
+                        <p>Already have an account? <a href="#" class="switch-link"
+                                data-target="login-form-container">Sign in</a></p>
+                    </div>
+                </div>
+
+                <!-- Forgot Password Form -->
+                <div class="form-container" id="forgot-form-container">
+                    <div class="form-header">
+                        <h2>Reset Password</h2>
+                        <p>Enter your email to receive reset instructions</p>
+                    </div>
+                    <form class="auth-form" id="forgot-password-form">
+                        <div class="form-group">
+                            <label for="reset-email">Email</label>
+                            <input type="email" id="reset-email" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Reset Code</button>
+                    </form>
+                    <div class="form-footer">
+                        <p>Remember your password? <a href="#" class="switch-link"
+                                data-target="login-form-container">Sign in</a></p>
+                    </div>
+                </div>
+
+                <!-- Verify OTP Form -->
+                <div class="form-container" id="verify-otp-container">
+                    <div class="form-header">
+                        <h2>Verify OTP</h2>
+                        <p>Enter the 6-digit code sent to your email</p>
+                    </div>
+                    <form class="auth-form" id="verify-otp-form">
+                        <div class="form-group">
+                            <label for="otp-code">OTP Code</label>
+                            <input type="text" id="otp-code" placeholder="123456" required pattern="[0-9]{6}" maxlength="6">
+                        </div>
+                        <button type="submit" class="btn-primary">Verify Code</button>
+                        <button type="button" id="resend-otp-btn" style="margin-top: 10px; width: 100%; background: transparent; border: 2px solid var(--primary-color); color: var(--primary-color); padding: 0.8rem 1.5rem; border-radius: 12px; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">Resend Code</button>
+                    </form>
+                    <div class="form-footer">
+                        <p>Back to <a href="#" class="switch-link" data-target="login-form-container">Login</a></p>
+                    </div>
+                </div>
+
+                <!-- Reset Password Form -->
+                <div class="form-container" id="reset-password-container">
+                    <div class="form-header">
+                        <h2>New Password</h2>
+                        <p>Create a new strong password</p>
+                    </div>
+                    <form class="auth-form" id="new-password-form">
+                        <div class="form-group">
+                            <label for="new-pass">New Password</label>
+                            <div class="password-input">
+                                <input type="password" id="new-pass" placeholder="Enter new password" required>
+                                <button type="button" class="password-toggle" data-target="new-pass">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-new-pass">Confirm Password</label>
+                            <div class="password-input">
+                                <input type="password" id="confirm-new-pass" placeholder="Confirm new password" required>
+                                <button type="button" class="password-toggle" data-target="confirm-new-pass">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-primary">Reset Password</button>
+                    </form>
+                </div>
+
+                <!-- Success Panel -->
+                <div class="form-container" id="success-panel">
+                    <div class="form-header">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h2>Registration Successful!</h2>
+                        <p>Welcome to our community!</p>
+                    </div>
+                    <div class="form-body" style="text-align: center;">
+                        <p style="margin-bottom: 2rem; opacity: 0.8; line-height: 1.6;">Your account has been created
+                            successfully. You can now log in to explore our projects, courses, and connect with other
+                            developers.</p>
+                        <button id="close-panel" class="btn-primary" style="width: 100%;">Go to Homepage</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/js/main.js?v=1.0"></script>
+    <script src="/js/login.js?v=1.0"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log('Login page loaded');
+        });
+    </script>
+</body>
+
+</html>

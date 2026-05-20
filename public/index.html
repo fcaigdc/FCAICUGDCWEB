@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FCAI CU GD Club - Game Development Community">
+    <meta name="theme-color" content="#ff4500">
+    <title>GD Club</title>
+    <link rel="stylesheet" href="/css/style.css?v=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Nastaliq+Urdu:regular,500,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=BBH+Bartle:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa+Ink:regular,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Handjet:100,200,300,regular,500,600,700,800,900"
+        rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/omar.webp" alt="Logo" loading="lazy">
+                <span class="logo-text">Game Development Club</span>
+            </div>
+            <div class="nav-links">
+                <a href="#contacts">Contacts</a>
+                <a href="/projects">Projects</a>
+                <a href="/gallery">Gallery</a>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button id="hamburger" class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-left">
+                <h1><span class="s-main">متخليش الدنيا</span> <span class="s-sec">تبكسلك</span></h1>
+                <p class="description">Join the premier game development community at FCAI. Learn, create, and innovate
+                    in the world of gaming.</p>
+                <div class="animated-text">
+                    <span>Unity</span> <br>
+                    <span>Unreal Engine</span> <br>
+                    <span>Godot</span> <br>
+                    <span>Game Design</span>
+                </div>
+            </div>
+            <div class="hero-right">
+                <video id="hero-video" autoplay muted loop>
+                    <source src="assets/videos/intro.webm" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <button class="mute-btn" id="mute-btn">
+                    <i class="fas fa-volume-mute"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid" id="team-grid">
+                <!-- Team members will be loaded dynamically via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider 1 -->
+    <div class="wave-divider wave-1">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,60 C400,0 800,120 1200,60 L1200,120 L0,120 Z"></path>
+        </svg>
+    </div>
+
+    <!-- YouTube Showcase -->
+    <section class="youtube-showcase">
+        <div class="container">
+            <h2>Our YouTube Content</h2>
+            <div class="youtube-slider" id="youtube-slider">
+                <!-- Thumbnails will be loaded dynamically via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mission-vision" id="about">
+        <div class="container">
+            <div class="mission">
+                <h2>Our Mission</h2>
+                <p>To foster a vibrant community of game developers, providing resources, mentorship, and opportunities
+                    for growth in the gaming industry.</p>
+            </div>
+            <div class="vision">
+                <h2>Our Vision</h2>
+                <p>To be the leading game development community in Egypt, producing innovative games and skilled
+                    developers that shape the future of gaming.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider 2 -->
+    <div class="wave-divider wave-2">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,60 C400,120 800,0 1200,60 L1200,120 L0,120 Z"></path>
+        </svg>
+    </div>
+
+    <!-- Courses & Projects Overview -->
+    <section class="overview">
+        <div class="container">
+            <h2>Our Impact</h2>
+            <div class="stats">
+                <div class="stat">
+                    <h3 id="students-count">0</h3>
+                    <p>Students Trained</p>
+                </div>
+                <div class="stat">
+                    <h3 id="graduates-count">0</h3>
+                    <p>Active Graduates</p>
+                </div>
+                <div class="stat">
+                    <h3 id="projects-count">0</h3>
+                    <p>Community Projects</p>
+                </div>
+            </div>
+            <a href="/projects" class="btn-primary">Explore Projects</a>
+        </div>
+    </section>
+
+
+
+    <!-- Partners Section -->
+    <section class="partners-section">
+        <div class="container">
+            <h2>Our Partners</h2>
+            <div class="partners-grid" id="partners-grid">
+                <!-- Partner logos injected here via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="contact-txt">Contact Us</h3>
+                    <p>Email: fcaigamedevclub@gmail.com</p>
+                    <p>Phone: +20 102 046 8877</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/FCA.Cairo.GD.Club" class="home-social-links"
+                            target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/company/fcai-cu-game-development-club/posts/?feedView=all"
+                            class="home-social-links" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/fcai_cairogdclub?igsh=cnR1d2RwNmUzMDI2"
+                            class="home-social-links" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@FCAICairoGDClub" class="home-social-links" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FCAI CUGD Club. All rights reserved.</p>
+                <br>
+                <p style="color: var(--secondary-color); font-size: 14px; text-align: right; margin: 1px 40px;">
+                    Made By
+                </p>
+                <p style="color: var(--secondary-color); font-size: 14px; text-align: right">
+                    Eng. Omar Abdelaziz
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js?v=1.0"></script>
+</body>
+
+</html>
