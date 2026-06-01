@@ -13,7 +13,7 @@ async function loadPartners() {
             return;
         }
         grid.innerHTML = partners.map(p => `
-                <img src="${p.logo_url}" alt="${p.name}" loading="lazy" class="partner-card">
+                <img src="${p.logo_url}" alt="${p.name}" loading="lazy" decoding="async" class="partner-card">
         `).join('');
     } catch (err) {
         console.error('Failed to load partners:', err);
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const card = document.createElement('div');
             card.className = 'team-card';
             card.innerHTML = `
-                <img src="${member.image}" alt="${member.name}" loading="lazy">
+                <img src="${member.image}" alt="${member.name}" loading="lazy" decoding="async">
                 <div class="overlay">
                     <h3>${member.name}</h3>
                     <p>${member.committee}</p>
@@ -266,6 +266,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 allVideos.forEach(video => {
                     const img = document.createElement('img');
                     img.loading = 'lazy';
+                    img.decoding = 'async';
                     const videoId = extractYouTubeId(video.youtube_url, video.id);
 
                     if (video.thumbnail) {
@@ -299,6 +300,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 allVideos.forEach(video => {
                     const img = document.createElement('img');
                     img.loading = 'lazy';
+                    img.decoding = 'async';
                     img.src = `https://img.youtube.com/vi/${video.id}/mqdefault.jpg`;
                     img.alt = video.title;
                     img.addEventListener('click', () => {
@@ -331,18 +333,8 @@ document.addEventListener('DOMContentLoaded', function () {
             track.style.animationIterationCount = 'infinite';
         };
 
-        const waitForImages = images.map(img => {
-            if (img.complete) return Promise.resolve();
-            return new Promise(resolve => {
-                img.addEventListener('load', resolve, { once: true });
-                img.addEventListener('error', resolve, { once: true });
-            });
-        });
-
-        Promise.all(waitForImages).then(() => {
-            update();
-            window.addEventListener('resize', update);
-        });
+        update();
+        window.addEventListener('resize', update);
     }
 
 

@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     `;
                 } else {
                     mediaHTML = `
-                        <div class="gallery-media">
-                            <img src="${item.src}" alt="${item.title}" loading="lazy">
-                        </div>
+                        <div class="gallery-card">
+                            <img src="${item.src}" alt="${item.title}" loading="lazy" decoding="async">
+                            <div class="overlay">
                     `;
                 }
 
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
         } else {
             lightboxMedia.innerHTML = `
-                <img src="${item.src}" alt="${item.title}">
+                <img src="${item.src}" alt="${item.title}" decoding="async">
             `;
         }
 

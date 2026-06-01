@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', async function() {
             grid.innerHTML = games.map(game => `
                 <div class="game-card">
                     <div class="game-image">
-                        <img src="${game.image || 'https://images.unsplash.com/photo-1511512578047-dfb367046420?fit=crop&w=600&q=80'}" alt="${game.title}" loading="lazy">
+                        <img src="${game.image || 'https://images.unsplash.com/photo-1511512578047-dfb367046420?fit=crop&w=600&q=80'}" alt="${game.title}" loading="lazy" decoding="async">
                     </div>
                     <div class="game-info">
                         <h3>${game.title}</h3>
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                 const projectsHTML = wave.projects && wave.projects.length ? wave.projects.map(proj => `
                     <div class="game-card">
                         <div class="game-image">
-                            <img src="${proj.image || 'https://images.unsplash.com/photo-1518770660439-4636190af475?fit=crop&w=600&q=80'}" alt="${proj.title}" loading="lazy">
+                            <img src="${proj.image || 'https://images.unsplash.com/photo-1518770660439-4636190af475?fit=crop&w=600&q=80'}" alt="${proj.title}" loading="lazy" decoding="async">
                         </div>
                         <div class="game-info">
                             <h3>${proj.title}</h3>
