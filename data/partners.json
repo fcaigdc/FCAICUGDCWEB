@@ -2,21 +2,21 @@
   {
     "id": 2,
     "name": "ييبيب",
-    "logo_url": "./assets/partners/1779227178116.jpg",
+    "logo_url": "./assets/partners/1779227178116.webp",
     "website_url": "",
     "display_order": 0
   },
   {
     "id": 3,
     "name": "يبيب",
-    "logo_url": "./assets/partners/1779230038295.png",
+    "logo_url": "./assets/partners/1779230038295.webp",
     "website_url": "",
     "display_order": 0
   },
   {
     "id": 1,
     "name": "سيسي",
-    "logo_url": "./assets/partners/1779227129042.png",
+    "logo_url": "./assets/partners/1779227129042.webp",
     "website_url": "",
     "display_order": 1
   }

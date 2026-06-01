@@ -107,21 +107,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Theme Toggle handled globally at the beginning of DOMContentLoaded
 
-    // Video Mute Toggle
+    // Video Loader and Mute Toggle (Only loads video on desktop >= 768px)
     const muteBtn = document.getElementById('mute-btn');
     const heroVideo = document.getElementById('hero-video');
 
-    if (muteBtn && heroVideo) {
-        muteBtn.addEventListener('click', () => {
-            const icon = muteBtn.querySelector('i');
-            if (heroVideo.muted) {
-                heroVideo.muted = false;
-                icon.className = 'fas fa-volume-up';
-            } else {
-                heroVideo.muted = true;
-                icon.className = 'fas fa-volume-mute';
+    if (heroVideo) {
+        if (window.innerWidth >= 768) {
+            const source = heroVideo.querySelector('source');
+            if (source && source.dataset.src) {
+                source.src = source.dataset.src;
+                heroVideo.load();
             }
-        });
+            
+            if (muteBtn) {
+                muteBtn.addEventListener('click', () => {
+                    const icon = muteBtn.querySelector('i');
+                    if (heroVideo.muted) {
+                        heroVideo.muted = false;
+                        icon.className = 'fas fa-volume-up';
+                    } else {
+                        heroVideo.muted = true;
+                        icon.className = 'fas fa-volume-mute';
+                    }
+                });
+            }
+        } else {
+            // Mobile: hide mute button since background video is not loaded
+            if (muteBtn) muteBtn.style.display = 'none';
+        }
     }
 
     // Animated Text
@@ -252,6 +265,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 allVideos.forEach(video => {
                     const img = document.createElement('img');
+                    img.loading = 'lazy';
                     const videoId = extractYouTubeId(video.youtube_url, video.id);
 
                     if (video.thumbnail) {
@@ -284,6 +298,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const allVideos = defaultVideos.concat(defaultVideos);
                 allVideos.forEach(video => {
                     const img = document.createElement('img');
+                    img.loading = 'lazy';
                     img.src = `https://img.youtube.com/vi/${video.id}/mqdefault.jpg`;
                     img.alt = video.title;
                     img.addEventListener('click', () => {

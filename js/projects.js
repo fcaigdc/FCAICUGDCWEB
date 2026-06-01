@@ -120,11 +120,13 @@ document.addEventListener('DOMContentLoaded', async function() {
 
             // Attach Tab Switching click events
             const tabs = tabsContainer.querySelectorAll('.wave-tab');
+            const panels = panelsContainer.querySelectorAll('.wave-panel');
+            
             tabs.forEach(tab => {
                 tab.addEventListener('click', () => {
                     // deactivate all tabs & panels
-                    tabsContainer.querySelectorAll('.wave-tab').forEach(t => t.classList.remove('active'));
-                    panelsContainer.querySelectorAll('.wave-panel').forEach(p => p.classList.remove('active'));
+                    tabs.forEach(t => t.classList.remove('active'));
+                    panels.forEach(p => p.classList.remove('active'));
 
                     // activate current
                     tab.classList.add('active');
