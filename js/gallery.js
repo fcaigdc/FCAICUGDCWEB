@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     async function loadGalleryItems() {
         try {
-            const response = await fetch('data/gallery.json');
+            const response = await fetch('./data/gallery.json');
             if (!response.ok) throw new Error('Failed to fetch gallery');
             const data = await response.json();
             const items = data.items || [];

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         if (!grid) return;
 
         try {
-            const res = await fetch('data/community-games.json');
+            const res = await fetch('./data/community-games.json');
             if (!res.ok) throw new Error('Failed to fetch community games');
             const games = await res.json();
 
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         if (!tabsContainer || !panelsContainer) return;
 
         try {
-            const res = await fetch('data/waves.json');
+            const res = await fetch('./data/waves.json');
             if (!res.ok) throw new Error('Failed to fetch waves');
             const waves = await res.json();
 

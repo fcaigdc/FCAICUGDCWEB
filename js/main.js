@@ -66,7 +66,7 @@ async function loadPartners() {
     const grid = document.getElementById('partners-grid');
     if (!grid) return;
     try {
-        const res = await fetch('data/partners.json');
+        const res = await fetch('./data/partners.json');
         const partners = await res.json();
         if (!partners.length) {
             grid.style.display = 'none';
@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let teamMembers = [];
         try {
-            const response = await fetch('data/team.json');
+            const response = await fetch('./data/team.json');
             if (response.ok) {
                 teamMembers = await response.json();
             }
@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const projectsCountEl = document.getElementById('projects-count');
 
         try {
-            const response = await fetch('data/statistics.json');
+            const response = await fetch('./data/statistics.json');
             if (response.ok) {
                 const stats = await response.json();
                 if (studentsCountEl) studentsCountEl.textContent = stats.students_count;
@@ -335,7 +335,7 @@ document.addEventListener('DOMContentLoaded', function () {
         track.className = 'youtube-track';
 
         // Fetch YouTube videos from API
-        fetch('data/youtube.json')
+        fetch('./data/youtube.json')
             .then(response => response.json())
             .then(videos => {
                 if (videos.length === 0) {
