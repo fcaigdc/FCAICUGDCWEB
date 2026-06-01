@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery - FCAI CUGD Club Game Development Community">
+    <title>Gallery - FCAI CUGD Club</title>
+    <link rel="stylesheet" href="css/style.css?v=2.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" style="cursor: pointer;">
+                <img src="assets/images/omar.webp" alt="FCAI CUGD Club Logo" loading="lazy">
+                <span>FCAI CUGD Club</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button id="hamburger" class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2>Our Creative Work</h2>
+            <p class="section-subtitle">Designs, posters, videos, and reels by our Media Committee</p>
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Gallery items will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <div class="lightbox-content">
+            <span class="close-lightbox" id="close-lightbox">&times;</span>
+            <div class="lightbox-media-container" id="lightbox-media-container">
+                <!-- Dynamic Image or Video loaded here -->
+            </div>
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+                <p id="lightbox-creator" class="gallery-creator"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="contact-txt">Contact Us</h3>
+                    <p>Email: fcaigamedevclub@gmail.com</p>
+                    <p>Phone: +20 102 046 8877</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/FCA.Cairo.GD.Club" class="home-social-links"
+                            target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/company/fcai-cu-game-development-club/posts/?feedView=all"
+                            class="home-social-links" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/fcai_cairogdclub?igsh=cnR1d2RwNmUzMDI2"
+                            class="home-social-links" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@FCAICairoGDClub" class="home-social-links" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FCAI CUGD Club. All rights reserved.</p>
+                <br>
+                <p style="color: var(--secondary-color); font-size: 14px; text-align: right; margin: 1px 40px;">
+                    Made By
+                </p>
+                <p style="color: var(--secondary-color); font-size: 14px; text-align: right">
+                    Eng. Omar Abdelaziz
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js?v=2.0"></script>
+    <script src="js/gallery.js?v=2.0"></script>
+</body>
+
+</html>

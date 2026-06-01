@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects - FCAI CUGD Club Game Development Community">
+    <title>Projects - FCAI CUGD Club</title>
+    <link rel="stylesheet" href="css/style.css?v=2.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" style="cursor: pointer;">
+                <img src="assets/images/omar.webp" alt="FCAI CUGD Club Logo" loading="lazy">
+                <span>FCAI CUGD Club</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button id="hamburger" class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Community Games Section -->
+    <section class="community-games-section">
+        <div class="container">
+            <h2>Community Games</h2>
+            <p class="section-subtitle">Games crafted by our talented community team</p>
+            <div class="games-grid" id="community-games-grid">
+                <!-- Loaded dynamically via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Waves Section -->
+    <section class="waves-section">
+        <div class="container">
+            <h2>Student Projects</h2>
+            <p class="section-subtitle">Final projects by our students, organized by training wave</p>
+
+            <!-- Wave Tabs -->
+            <div class="wave-tabs" id="wave-tabs">
+                <!-- Tab buttons injected by JS -->
+            </div>
+
+            <!-- Wave Content Panels -->
+            <div class="wave-panels" id="wave-panels">
+                <!-- Panels injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h2 style="margin: 5px 0;">Connect With Us</h2>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/FCA.Cairo.GD.Club" class="social-link" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://www.linkedin.com/company/fcai-cu-game-development-club/posts/?feedView=all" class="social-link" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://www.instagram.com/fcai_cairogdclub?igsh=cnR1d2RwNmUzMDI2" class="social-link" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.youtube.com/@FCAICairoGDClub" class="social-link" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 FCAI CUGD Club. All rights reserved.</p>
+                <p style="color: var(--secondary-color); font-size: 14px; text-align: right; margin: 1px 40px;">
+                    Made By
+                </p>
+                <p style="color: var(--secondary-color); font-size: 14px; text-align: right">
+                    Eng. Omar Abdelaziz
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js?v=2.0"></script>
+    <script src="js/projects.js?v=2.0"></script>
+</body>
+
+</html>
