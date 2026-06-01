@@ -213,77 +213,7 @@ section {
     color: var(--secondary-color);
 }
 
-/* User Profile and Logout */
-.user-profile,
-.logout-btn {
-    background: none;
-    border: none;
-    color: var(--text-color);
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: all 0.3s;
-    padding: 0.5rem;
-}
-
-.user-profile:hover,
-.logout-btn:hover {
-    color: var(--secondary-color);
-    transform: scale(1.2);
-}
-
-.logout-btn {
-    margin-left: 0.5rem;
-}
-
-.admin-dropdown {
-    position: relative;
-}
-
-.admin-trigger {
-    background: none;
-    border: none;
-    color: var(--text-color);
-    font-size: 1.2rem;
-    cursor: pointer;
-    padding: 0.5rem;
-    transition: all 0.3s;
-}
-
-.admin-trigger:hover {
-    color: var(--secondary-color);
-    transform: scale(1.2);
-}
-
-.admin-menu {
-    position: absolute;
-    right: -70px;
-    top: 50px;
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 14px;
-    min-width: 180px;
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-    z-index: 20;
-}
-
-.admin-menu.hidden {
-    display: none;
-}
-
-.admin-menu a {
-    display: block;
-    text-align: center;
-    padding: 0.9rem 1rem;
-    color: var(--text-color);
-    text-decoration: none;
-    transition: background-color 0.25s, color 0.25s;
-}
-
-.admin-menu a:hover {
-    background: var(--secondary-color);
-    color: var(--login-btn-text-color);
-}
+/* Legacy Admin and User controls removed */
 
 /* Section headings */
 section h2,
@@ -1457,10 +1387,7 @@ section h2 {
         right: 0;
     }
 
-    .nav-links a,
-    .nav-links .logout-btn,
-    .nav-links .admin-trigger,
-    .nav-links .user-profile {
+    .nav-links a {
         width: 100%;
         text-align: center;
         justify-content: center;
@@ -1477,20 +1404,7 @@ section h2 {
         color: var(--text-color);
     }
 
-    .admin-menu {
-        position: static;
-        width: 100%;
-        box-shadow: none;
-        background: rgba(128, 128, 128, 0.08);
-        border-radius: 12px;
-        margin-top: -0.5rem;
-        padding: 0.5rem 0;
-    }
 
-    .admin-menu a {
-        border-bottom: none;
-        padding-left: 1.5rem;
-    }
 
     .nav-links .login-btn {
         width: 100%;

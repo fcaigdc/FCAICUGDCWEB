@@ -4,7 +4,7 @@
     "name": "Mohamed Mostafa",
     "committee": "Community Lead",
     "linkedin": "https://www.linkedin.com/in/mohamed-game-dev",
-    "image": "/assets/team/1777232018006.webp",
+    "image": "./assets/team/1777232018006.webp",
     "details": null
   },
   {
@@ -12,7 +12,7 @@
     "name": "Omar Abdelaziz Ali",
     "committee": "Vice Head",
     "linkedin": "https://www.linkedin.com/in/omar-abdelaziz-bb3842337",
-    "image": "/assets/team/1777360689808.png",
+    "image": "./assets/team/1777360689808.png",
     "details": null
   },
   {
@@ -20,7 +20,7 @@
     "name": "Joy Magdy",
     "committee": "Academic Head",
     "linkedin": "https://www.linkedin.com/in/joy-magdy-486147380",
-    "image": "/assets/team/1777232037596.webp",
+    "image": "./assets/team/1777232037596.webp",
     "details": null
   },
   {
@@ -28,7 +28,7 @@
     "name": "Andrew Remon",
     "committee": "Non Technical Lead",
     "linkedin": "https://www.linkedin.com/in/andrewremon",
-    "image": "/assets/team/1777232043606.webp",
+    "image": "./assets/team/1777232043606.webp",
     "details": null
   },
   {
@@ -36,7 +36,7 @@
     "name": "Mahmoud Adel",
     "committee": "Community Founder",
     "linkedin": "https://www.linkedin.com/in/mahmoud-adel-582497162",
-    "image": "/assets/team/1777232049552.webp",
+    "image": "./assets/team/1777232049552.webp",
     "details": null
   },
   {
@@ -44,7 +44,7 @@
     "name": "Yassin Tarek",
     "committee": "Community Founder",
     "linkedin": "https://www.linkedin.com/in/yassin-tarek-b5516827b",
-    "image": "/assets/team/1777232057183.webp",
+    "image": "./assets/team/1777232057183.webp",
     "details": null
   },
   {
@@ -52,7 +52,7 @@
     "name": "Abdullah Sadek",
     "committee": "Community Founder",
     "linkedin": "https://www.linkedin.com/in/abdallahashrafsadek",
-    "image": "/assets/team/1777232064821.webp",
+    "image": "./assets/team/1777232064821.webp",
     "details": null
   },
   {
@@ -60,7 +60,7 @@
     "name": "Ammar Yasser",
     "committee": "Media Head",
     "linkedin": "https://www.linkedin.com/in/ammar-yasser-ab549325b",
-    "image": "/assets/team/1777360573733.png",
+    "image": "./assets/team/1777360573733.png",
     "details": null
   },
   {
@@ -68,7 +68,7 @@
     "name": "Mariam Eid",
     "committee": "PR Head",
     "linkedin": "https://www.linkedin.com/in/mariam-eid-b09a351b0",
-    "image": "/assets/team/1777232093069.webp",
+    "image": "./assets/team/1777232093069.webp",
     "details": null
   },
   {
@@ -76,7 +76,7 @@
     "name": "Alaa Azima",
     "committee": "Academic & Media",
     "linkedin": "https://www.linkedin.com/in/alaaazima",
-    "image": "/assets/team/1777232099995.webp",
+    "image": "./assets/team/1777232099995.webp",
     "details": null
   },
   {
@@ -84,7 +84,7 @@
     "name": "Ahmed Yasser",
     "committee": "Marketing",
     "linkedin": "https://www.linkedin.com/in/ahmed-yasser-644126262",
-    "image": "/assets/team/1777360706091.png",
+    "image": "./assets/team/1777360706091.png",
     "details": null
   },
   {
@@ -92,7 +92,7 @@
     "name": "Nada Ahmed",
     "committee": "Media",
     "linkedin": "https://www.linkedin.com/in/nada-ahmed-ba47bb303",
-    "image": "/assets/team/1777360716671.png",
+    "image": "./assets/team/1777360716671.png",
     "details": null
   },
   {
@@ -100,7 +100,7 @@
     "name": "Ayat Ali",
     "committee": "Media",
     "linkedin": "https://www.linkedin.com/in/ayat-ali-12aa03398",
-    "image": "/assets/team/1777232123557.webp",
+    "image": "./assets/team/1777232123557.webp",
     "details": null
   },
   {
@@ -108,7 +108,7 @@
     "name": "Lojyn Hussien",
     "committee": "Media",
     "linkedin": "https://www.linkedin.com/in/lojyn-hussien-ba906a34a",
-    "image": "/assets/team/1777360723272.png",
+    "image": "./assets/team/1777360723272.png",
     "details": null
   },
   {
@@ -116,7 +116,7 @@
     "name": "Aabed Yasser",
     "committee": "Academic",
     "linkedin": "https://www.linkedin.com/in/aabed-yasser-615626312",
-    "image": "/assets/team/1777360737438.png",
+    "image": "./assets/team/1777360737438.png",
     "details": null
   },
   {
@@ -124,7 +124,7 @@
     "name": "Mohmed Ibrahim",
     "committee": "Academic",
     "linkedin": "https://www.linkedin.com/in/mohmed-ibrahim-661569291",
-    "image": "/assets/team/1777360748050.png",
+    "image": "./assets/team/1777360748050.png",
     "details": null
   },
   {
@@ -132,7 +132,7 @@
     "name": "Menna Omar",
     "committee": "Academic",
     "linkedin": "https://www.linkedin.com/in/menna-omar-04202a3b2",
-    "image": "/assets/team/1777360754253.png",
+    "image": "./assets/team/1777360754253.png",
     "details": null
   },
   {
@@ -140,7 +140,7 @@
     "name": "Moaz Nasser",
     "committee": "PR",
     "linkedin": "https://www.linkedin.com/in/moaz-nasser-a81a24388",
-    "image": "/assets/team/1777360759652.png",
+    "image": "./assets/team/1777360759652.png",
     "details": null
   },
   {
@@ -148,7 +148,7 @@
     "name": "Abdelrahman Bahaa",
     "committee": "HR Head",
     "linkedin": "https://www.linkedin.com/in/abdobahaa285",
-    "image": "/assets/team/1777360764751.png",
+    "image": "./assets/team/1777360764751.png",
     "details": null
   },
   {
@@ -156,7 +156,7 @@
     "name": "Seba Ibraheem",
     "committee": "HR",
     "linkedin": "https://www.linkedin.com/in/seba-ibraheem-488b0b295",
-    "image": "/assets/team/1777360770362.png",
+    "image": "./assets/team/1777360770362.png",
     "details": null
   },
   {
@@ -164,7 +164,7 @@
     "name": "Habiba Abohamda",
     "committee": "HR",
     "linkedin": "https://www.linkedin.com/in/habiba-abohamda-40611a363",
-    "image": "/assets/team/1777360776219.png",
+    "image": "./assets/team/1777360776219.png",
     "details": null
   },
   {
@@ -172,7 +172,7 @@
     "name": "Salma Tarek",
     "committee": "Marketing",
     "linkedin": "https://www.linkedin.com/in/salma-tarek-6978a2391",
-    "image": "/assets/team/1777360782246.png",
+    "image": "./assets/team/1777360782246.png",
     "details": null
   },
   {
@@ -180,7 +180,7 @@
     "name": "Menna Usama",
     "committee": "Marketing",
     "linkedin": "https://www.linkedin.com/in/menna-usama-58121b3a1",
-    "image": "/assets/team/1777361322823.png",
+    "image": "./assets/team/1777361322823.png",
     "details": null
   }
 ]

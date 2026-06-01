@@ -60,10 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 `;
 
                 // Card Click opens Lightbox Modal
-                card.addEventListener('click', (e) => {
-                    // Do not trigger lightbox if user clicked rating star
-                    if (e.target.closest('.stars.interactive')) return;
-
+                card.addEventListener('click', () => {
                     openLightbox(item);
                 });
 

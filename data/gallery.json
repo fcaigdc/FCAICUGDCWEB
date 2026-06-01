@@ -1,24 +1,6 @@
 {
   "items": [
     {
-      "id": 16,
-      "title": "dsdsd",
-      "description": "sdsdsd",
-      "src": null,
-      "media_type": "image",
-      "creator_name": "Media Committee",
-      "display_order": 0
-    },
-    {
-      "id": 17,
-      "title": "سيسيسي",
-      "description": "سيسيسي",
-      "src": null,
-      "media_type": "image",
-      "creator_name": null,
-      "display_order": 0
-    },
-    {
       "id": 4,
       "title": "Game Character Design",
       "description": "Original character concept for RPG game",

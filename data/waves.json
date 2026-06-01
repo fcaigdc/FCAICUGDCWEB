@@ -10,7 +10,7 @@
         "id": 1,
         "title": "sdgfsdf",
         "description": "sdfsdf",
-        "image": "/assets/projects/1779230172258.png",
+        "image": "./assets/projects/1779230172258.png",
         "team": "FCAI-CU Game Development Club",
         "itch_url": "https://flyingfox-x.itch.io/",
         "display_order": 0
@@ -19,7 +19,7 @@
         "id": 2,
         "title": "sdfsfdfdf",
         "description": "dfcvsftbdb",
-        "image": "/assets/projects/1779225345579.png",
+        "image": "./assets/projects/1779225345579.png",
         "team": "Ahmed & Team",
         "itch_url": "",
         "display_order": 1
@@ -37,7 +37,7 @@
         "id": 1,
         "title": "kljilghvnygn",
         "description": "vggnftnfgn",
-        "image": "/assets/projects/1779225365404.png",
+        "image": "./assets/projects/1779225365404.png",
         "team": "FCAI-CU Game Development Club",
         "itch_url": "",
         "display_order": 1

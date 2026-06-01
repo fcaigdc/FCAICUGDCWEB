@@ -1,64 +1,4 @@
-// Reusable toast system
-function getToastContainer() {
-    let container = document.querySelector('.toast-container');
-    if (!container) {
-        container = document.createElement('div');
-        container.className = 'toast-container';
-        document.body.appendChild(container);
-    }
-    return container;
-}
-
-function toastIcon(type) {
-    const icons = {
-        success: '✔',
-        error: '⚠',
-        warning: '⚠',
-        info: 'ℹ'
-    };
-    return icons[type] || icons.info;
-}
-
-function showToast(message, type = 'info') {
-    const container = getToastContainer();
-    const existingToasts = container.querySelectorAll('.toast');
-    if (existingToasts.length >= 3) {
-        existingToasts[0].remove();
-    }
-
-    const toast = document.createElement('div');
-    toast.className = `toast toast-${type}`;
-    toast.innerHTML = `
-        <span class="toast-icon">${toastIcon(type)}</span>
-        <div class="toast-message">${message}</div>
-    `;
-    container.appendChild(toast);
-
-    requestAnimationFrame(() => {
-        toast.classList.add('toast-enter');
-    });
-
-    const removeToast = () => {
-        toast.classList.remove('toast-enter');
-        toast.classList.add('toast-exit');
-        toast.style.pointerEvents = 'none';
-    };
-
-    const handleAnimationEnd = (event) => {
-        if (event.animationName === 'toastExit') {
-            toast.remove();
-            if (container.children.length === 0) {
-                container.remove();
-            }
-        }
-    };
-
-    toast.addEventListener('animationend', handleAnimationEnd);
-    setTimeout(removeToast, 3700);
-    return toast;
-}
-
-window.showToast = showToast;
+// Toast system removed (legacy code)
 
 
 // Load Partners section dynamic grid
@@ -114,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    if (document.body.classList.contains('admin-page')) return;
 
     // Hamburger Menu Logic
     const hamburger = document.getElementById('hamburger');
@@ -164,49 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Global Confirm Modal Function
-    window.showConfirmModal = function (message, onConfirm) {
-        let confirmModal = document.getElementById('global-confirm-modal');
-        if (!confirmModal) {
-            confirmModal = document.createElement('div');
-            confirmModal.id = 'global-confirm-modal';
-            confirmModal.className = 'modal';
-            confirmModal.innerHTML = `
-                <div class="modal-content">
-                    <h3 id="global-confirm-msg" style="margin-bottom: 2rem;">Are you sure?</h3>
-                    <div class="modal-buttons" style="display: flex; gap: 1rem; justify-content: center;">
-                        <button id="global-confirm-btn" class="btn-primary" style="background: red;">Delete</button>
-                        <button id="global-cancel-btn" class="btn-secondary">Cancel</button>
-                    </div>
-                </div>
-            `;
-            document.body.appendChild(confirmModal);
-        }
 
-        document.getElementById('global-confirm-msg').textContent = message;
-        confirmModal.classList.add('show');
-        document.body.classList.add('no-scroll');
-
-        const confirmBtn = document.getElementById('global-confirm-btn');
-        const cancelBtn = document.getElementById('global-cancel-btn');
-
-        // Clean up old listeners
-        const newConfirmBtn = confirmBtn.cloneNode(true);
-        confirmBtn.parentNode.replaceChild(newConfirmBtn, confirmBtn);
-        const newCancelBtn = cancelBtn.cloneNode(true);
-        cancelBtn.parentNode.replaceChild(newCancelBtn, cancelBtn);
-
-        newConfirmBtn.addEventListener('click', () => {
-            confirmModal.classList.remove('show');
-            document.body.classList.remove('no-scroll');
-            onConfirm();
-        });
-
-        newCancelBtn.addEventListener('click', () => {
-            confirmModal.classList.remove('show');
-            document.body.classList.remove('no-scroll');
-        });
-    };
 
     // Theme Toggle handled globally at the beginning of DOMContentLoaded
 
@@ -436,11 +333,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     function initScrollReveal() {
-        const path = window.location.pathname;
-        const isExcluded = path.includes('/login') || path.includes('/profile') || path.includes('/admin');
-
-        if (isExcluded) return;
-
         const observerOptions = {
             threshold: 0.12,
             rootMargin: '0px 0px -50px 0px'
