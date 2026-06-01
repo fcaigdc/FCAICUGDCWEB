@@ -255,6 +255,14 @@ section h2 {
     fill: var(--card-bg);
 }
 
+.wave-divider.wave-flip {
+    transform: rotate(180deg);
+}
+
+.wave-divider.wave-flip path {
+    fill: var(--card-bg);
+}
+
 /* Hero Section */
 .hero {
     padding: 120px 20px 120px !important;
@@ -350,8 +358,7 @@ section h2 {
 /* Team Section */
 .team {
     padding: 80px 0;
-    background-color: var(--bg-color);
-    margin: 2rem 0;
+    background-color: var(--card-bg);
 }
 
 .team h2 {
@@ -390,7 +397,7 @@ section h2 {
 
 .team-card {
     position: relative;
-    background-color: var(--card-bg);
+    background-color: var(--bg-color);
     backdrop-filter: var(--card-backdrop);
     -webkit-backdrop-filter: var(--card-backdrop);
     border: 1px solid var(--border-color);
@@ -455,7 +462,7 @@ section h2 {
 /* YouTube Showcase */
 .youtube-showcase {
     padding: 60px 0;
-    background-color: var(--card-bg);
+    background-color: var(--bg-color);
 }
 
 .youtube-showcase h2 {
