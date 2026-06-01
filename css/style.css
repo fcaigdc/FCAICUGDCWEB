@@ -25,7 +25,7 @@
 }
 
 /* Light Mode */
-.light-mode {
+:root[data-theme="light"], .light-mode {
     --primary-color: #fbc500;
     --secondary-color: #ff5303;
     --accent-color: #ff9e00;
