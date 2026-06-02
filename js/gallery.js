@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     `;
                 } else {
                     mediaHTML = `
-                        <div class="gallery-card">
+                        <div class="gallery-media">
                             <img src="${item.src}" alt="${item.title}" loading="lazy" decoding="async">
-                            <div class="overlay">
+                        </div>
                     `;
                 }
 
